@@ -1,0 +1,15 @@
+a=int(input('enter a value'))
+b=int(input('enter  b valuuue'))
+try:
+    print('resource open')
+    print(a/b)
+    k=int(input('enter a number'))
+    print(k)
+except ZeroDivisionError as e:
+    print('hey, you cannot divide a number by zero',e)
+except ValueError as e:
+    print('Invalid input',e)
+except Exception as e:
+    print('something wrong')
+finally:
+    print('resource closed')
